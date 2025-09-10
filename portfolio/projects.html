@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+      <div id="header"></div>
+<!-- project section -->
+
+<section class="project-page">
+      <h3>From Concept to Code</h3>
+<div class="horizontal">
+      <div class="flip">
+      <div class="front" style="background-image: url(../assets/images/18505068_SL-070720-32260-33.jpg)">
+         <h1 class="text-shadow">PROJECT NAME</h1>
+      </div>
+      <div class="back" onclick="onclic()">
+         <h2>Project Name</h2>
+         <p>Responsive mapping app that visualizes hiking trails and elevation data. Built with React, Leaflet and Node.js; consumes GeoJSON and REST APIs for route and terrain data.</p>
+      </div>
+</div>
+<div class="flip">
+      <div class="front" style="background-image: url(../assets/images/18505068_SL-070720-32260-33.jpg)">
+          <h1 class="text-shadow">PROJECT NAME</h1>
+      </div>
+      <div class="back">
+         <h2>Project Name</h2>
+         <p>Marina management and booking system. Frontend in Vue.js with Firebase auth and realtime DB; Cloud Functions handle payments and scheduling.</p>
+      </div>
+</div>
+<div class="flip">
+      <div class="front" style="background-image: url(../assets/images/18505068_SL-070720-32260-33.jpg)">
+         <h1 class="text-shadow">PROJECT NAME</h1>
+      </div>
+      <div class="back">
+         <h2>Project Name</h2>
+         <p>Data pipeline and dashboard for marine environmental metrics. Python (Flask) backend with Pandas, PostgreSQL for storage, and D3.js for visualizations.</p>
+      </div>
+</div>
+
+</div> 
+
+
+<!-- vertical -->
+  
+<!-- <h4>Vertical Flip</h4> -->
+  <div class="vertical">
+      <div class="flip flip-vertical">
+      <div class="front" style="background-image: url(../assets/images/18505068_SL-070720-32260-33.jpg)">
+         <h1 class="text-shadow">PROJECT NAME</h1>
+        </div>
+        <div class="back">
+         <h2>Project Name</h2>
+         <p>Mobile-first tree inventory and species identification app. Built with React Native and TensorFlow Lite for on-device image classification; syncs to AWS backend.</p>
+      </div>
+ </div>
+<div class="flip flip-vertical">
+      <div class="front" style="background-image: url(../assets/images/18505068_SL-070720-32260-33.jpg)">
+          <h1 class="text-shadow">PROJECT NAME</h1>
+      </div>
+      <div class="back">
+         <h2>Project Name</h2>
+         <p>GPS tracking and performance analysis for athletes. Native mobile apps (Kotlin/Swift), GraphQL API, PostgreSQL for route analytics and leaderboards.</p>
+      </div>
+</div>
+<div class="flip flip-vertical" >
+      <div class="front" style="background-image: url(../assets/images/18505068_SL-070720-32260-33.jpg)">
+         <h1 class="text-shadow">PROJECT NAME</h1>
+      </div>
+      <div class="back" onclick="onclic()">
+         <h2>Project Name</h2>
+         <p>Real-time wetland monitoring platform. IoT sensors publish to MQTT; backend services in Go ingest and analyze streams; frontend built with Svelte for live dashboards.</p>
+      </div>
+</div>
+</div>
+</section>
+<div class="project-detail" id="popup">
+    
+      <div class="p-card">
+              
+           <div class="p-sub-text">
+             <h2>Project Name</h2>
+              <p>Lorem, ipsum dolor sit amet consectetur adipiscing elit. Excepturi rem incidunt, soluta accusamus consequuntur veniam accusantium officia quaerat. Dolore aspernatur, assumenda quam veritatis temporibus at distinctio doloribus mollitia rerum dicta.</p>
+
+                 <a href="#"><button>Go to project</button></a>
+           </div>
+
+             <div class="p-sub-image"><img src="../assets/images/18505068_SL-070720-32260-33.jpg" alt=""></div>
+
+      </div>
+</div>
+
+<!-- project section -->
+
+      <div id="footer"></div>
+  <script src="../js/load.js"></script>
+  <script>
+    function onclic() {
+        const popup = document.getElementById("popup");
+        
+        // Show popup with animation
+        popup.style.display = "flex";
+        // Trigger reflow
+        void popup.offsetWidth;
+        // Add active class for animation
+        popup.classList.add("active");
+        
+        // Close when clicking outside .p-card
+        function closePopup(e) {
+            if (e.target === popup) {
+                popup.classList.remove("active");
+                // Wait for animation to finish before hiding
+                setTimeout(() => {
+                    popup.style.display = "none";
+                }, 300);
+            }
+        }
+        
+        popup.addEventListener("click", closePopup);
+    }
+  </script>
+</body>
+</html>
