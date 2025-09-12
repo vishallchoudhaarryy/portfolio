@@ -20,7 +20,9 @@
       <p>“Hi, I’m Vishal Choudhary, a passionate front-end developer who loves crafting clean, modern, and user-friendly websites. My goal is to bring ideas to life through elegant designs and efficient code.”</p>
 </div>
 <div class="about-text">
-    <div class="text-img"><img src="assets/images/about.gif" alt=""></div>
+ <div class="parent-b">   <div class="text-img" id="bitvideo"><img src="assets/images/about.gif" alt="">
+   </div>
+    <div class="text-img1" id="bitmoji"><img src="assets/images/dummy-removebg-preview.png" alt=""></div></div>
     <div class="about-sub"><h4>“I started my coding journey with the basics of HTML and CSS, and gradually fell in love with the process of building digital experiences. Over time, I explored JavaScript, frameworks, and responsive design to create projects that not only work seamlessly but also look beautiful on every screen.
                                  Currently, I’m focusing on sharpening my skills in modern frontend frameworks and improving my problem-solving abilities to deliver better solutions. In the future, I aspire to work on large-scale applications and contribute to innovative tech projects.”</h4></div>
 </div>
@@ -165,3 +167,16 @@
 
             <div id="footer"></div>
   <script src="../js/load.js"></script>
+  <script>
+    const video = document.getElementById('bitvideo');
+const image = document.getElementById('bitmoji');
+    setTimeout(() => {
+      video.style.display = 'none';
+      image.style.display = 'block';
+    }, 4500);
+
+
+
+  </script>
+</body>
+</html>

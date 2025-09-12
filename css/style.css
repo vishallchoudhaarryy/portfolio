@@ -981,12 +981,12 @@ footer {
 }
 
 /*=======================skill-set-section============== */
- .about-h1{
+.about-h1 {
   text-align: center;
   max-width: 700px;
   margin: auto;
- }
-.about-text{
+}
+.about-text {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -996,13 +996,27 @@ footer {
 }
 
 .text-img {
-height: 300px;
+  height: 300px;
   width: 100%;
-  
-  position: relative;
+  max-width: 500px;
+  /* position: relative; */
 
   /* Apply animation */
   animation: slideFromLeft 2s ease-out forwards;
+  
+}
+.parent-b {
+  position: relative;
+  width: 500px;
+  height: 300px;
+}
+.text-img1 {
+  position: absolute;
+  top: -60px;
+  left: 89px;
+  height: 427px;
+  width: 500px;
+  display: none;
 }
 
 /* Keyframes */
@@ -1017,14 +1031,12 @@ height: 300px;
   }
 }
 
-.about-sub{
+.about-sub {
   font-size: 20px;
   /* line-height: 1.6; */
   font-style: italic;
   max-width: 800px;
 }
-
-
 
 .skill-sec {
   display: flex;
@@ -1033,6 +1045,7 @@ height: 300px;
   flex-wrap: wrap;
   gap: 50px;
   padding-inline: 200px;
+  margin-top: 60px;
 }
 
 .skill-card {
